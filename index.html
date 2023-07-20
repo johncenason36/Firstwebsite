@@ -20,9 +20,69 @@
     <p>
         This is my 2nd paragraph! And it will actually form this time. It's gonna actually turn into a paragraph now.
     </p>
-    <p> In this paragraph Imma use bold and italics. Like <strong> Chicken Nuggets are so damn good</strong> will be in bold and <em> onion rings are better than fries</em> will be in italics
+    <p> 
+        In this paragraph Imma use bold and italics. Like <strong> Chicken Nuggets are so damn good</strong> will be in bold and <em> onion rings are better than fries</em> will be in italics
     </p>
     <!-- strong and em actually change the way a screen reader would read your text but using <b> and <i> would allow for a visual bold and italic but it wouldn't change the way a screen reader would read that text. -->
+    <h2> Unordered Lists</h2>
+    <p> 
+        3 things I need to do today:
+    </p>
+    <ul>
+        <li> Wash the dishes </li>
+        <li> Study for my midterm</li>
+        <li> Make dinner</li>
+    </ul>
+    <h2> Ordered lists</h2>
+    <p>
+        Top 5 foods in the world
+    </p>
+    <ol>
+        <li> Pizza: just a comfort food and really hard to mess up. I've never had a bad pizza</li>
+        <li> Sushi: doesn't really matter which type it usually always hits</li>
+        <li> A baked potato with sourcream and cheese only: truly one of the best sides out there</li>
+        <li> Fresh motzerella sticks: no explanation needed</li>
+        <li> Hot dogs: again another comfort food and just really hard to mess up</li>
+    </ol>
+    <!--<a> click me</a> This is because an anchor tag on its own 
+        won’t know where we want to link to. We have to tell it a destination to go to. 
+        We do this by using an HTML attribute.
+        An HTML attribute gives additional information to an HTML element and always goes in the element’s 
+        opening tag. An attribute is usually made up of two parts: a name, and a value; however,
+        ot all attributes require a value. In our case, we need to add a href (hyperlink reference) 
+        attribute to the opening anchor tag. The value of the href attribute is the destination 
+        we want our link to go to.
+    -->
+    <p>
+        <a href="https://www.theodinproject.com/about">click me to learn how I'm doing this</a>
+    </p>
+    <!--By default, any text wrapped with an anchor tag without a href attribute will look like plain text. 
+        If the href attribute is present,the browser will give the text a blue color 
+        and underline it to signify it is a link.-->
+    <!-- this opens the odinproject page in the same tab to open it in a different tab we need to add
+          a target to the opening tag. -->
+    <p>
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me to go to a new tab</a>
+    </p>
+    <!-- the target = "_blank" is what causes a new tab to open but the rel = no opener and no referrer are 
+    security lines. You can go to the oden project links and images to learn more about it. It's just good
+    to have-->
+    <!-- Links to pages on other websites on the internet are called absolute links. Like the link for odin project-->
+    <p>
+        <a href="about.html">About</a> 
+    </p>
+    <!-- Links to other pages within our own website are called relative links. Like the one to the about page-->
+    <!-- This works because the index and about page are in the same directory. 
+        That means we can simply use its name (about.html) as the link’s href value.
+        But we will usually want to organize our website directories a little better. 
+        Normally we would only have the index.html at the root directory and all other HTML files in 
+        their own directory. Now that link will be broken this is how we do it when its in a new directory-->
+    <p>
+        <a href="./pages/about.html">About</a>
+    </p>    
+
+
+
 </body>
 
 
